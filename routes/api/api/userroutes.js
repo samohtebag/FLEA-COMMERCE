@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Product} = require('../../models');
+const { User, Product, Category, Tag} = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // GET /api/users
@@ -23,20 +23,21 @@ router.get('/:id', (req, res) => {
           id: req.params.id
         },
         include: [
-            {
-                //check models when they are finished
-              model: Product,
-              attributes: ['id', 'name', 'price', 'stock']
-            },
-            {
-                model: Comment,
-                attributes: ['id', 'comment_text', 'created_at'],
-                include: {
-                  model: Post,
-                  attributes: ['title']
-                }
-            }
-          ]
+          {
+            //check models when they are finished
+            model: Product,
+            attributes: ['id', 'product_name', 'price', 'stock']
+          },
+          //Do Tags and Categories need to be associated with the user?? just tags? neither??
+          {
+            model: Tag,
+            attributes: ['id', 'tag_name'],            
+          },
+          {
+            model: Category,
+            attributes: ['id', 'category_name'],
+          }
+        ]
 
     })
       .then(dbUserData => {

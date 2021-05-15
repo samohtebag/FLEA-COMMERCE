@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Product, User} = require('../../models');
+const { Product, User, Category, Tag} = require('../../models');
 
 // The `/api/products` endpoint
 
@@ -9,17 +9,18 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
   const productData = await Product.findAll({
-    attributes: ['id', 'name', 'price', 'stock'],
-    order: [['price', 'DESC']]
-    // include: [{
-    //   model: Category,
-    //   attributes: ['id', 'category_name'],
-    // },
-    // {
-    //   model: Tag,
-    //   attributes: ['id', 'tag_name'],
-    // },
-//   ],
+    attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
+    order: [['price', 'DESC']],
+    include: [{
+      model: Category,
+      attributes: ['id', 'category_name'],
+    },
+    {
+      model: Tag,
+      attributes: ['id', 'tag_name'],
+      //Check in on this b/c idk if we did the tag part right!!
+    },
+  ],
   });
   res.status(200).json(productData);
 } catch (err) {
@@ -33,16 +34,16 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
     const productData = await Product.findByPk(req.params.id, {
-      attributes: ['id', 'name', 'price', 'stock'],
-//     include: [{
-//       model: Category,
-//       attributes: ['id', 'category_name'],
-//     },
-//     {
-//       model: Tag,
-//       attributes: ['id', 'tag_name'],
-//     },
-//   ],
+      attributes: ['id', 'product_name', 'price', 'stock'],
+    include: [{
+      model: Category,
+      attributes: ['id', 'category_name'],
+    },
+    {
+      model: Tag,
+      attributes: ['id', 'tag_name'],
+    },
+  ],
   });
   if(!productData) {
     res.status(404).json({
@@ -60,31 +61,31 @@ router.get('/:id', async (req, res) => {
 router.post('/', (req, res) => {
 
   Product.create({
-    name: req.body.name,
+    product_name: req.body.product_name,
     price: req.body.price,
     stock: req.body.stock,
 
   })
-    // .then((product) => {
-      // if there's product tags, we need to create pairings to bulk create in the ProductTag model
-    //   if (req.body.tagIds.length) {
-    //     const productTagIdArr = req.body.tagIds.map((tag_id) => {
-    //       return {
-    //         product_id: product.id,
-    //         tag_id,
-    //       };
-    //     });
-    //     return ProductTag.bulkCreate(productTagIdArr);
-    //   }
-      // if no product tags, just respond
-//       res.status(200).json(product);
-//     })
-//     .then((productTagIds) => res.status(200).json(productTagIds))
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(400).json(err);
-//     });
-// });
+    .then((product) => {
+      //if there's product tags, we need to create pairings to bulk create in the ProductTag model
+      if (req.body.tagIds.length) {
+        const productTagIdArr = req.body.tagIds.map((tag_id) => {
+          return {
+            product_id: product.id,
+            tag_id,
+          };
+        });
+        return ProductTag.bulkCreate(productTagIdArr);
+      }
+      //if no product tags, just respond
+      res.status(200).json(product);
+    })
+    .then((productTagIds) => res.status(200).json(productTagIds))
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
+});
 
 // update product
 router.put('/:id', (req, res) => {
