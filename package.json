@@ -20,6 +20,7 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.1.1",
+    "controllers": "0.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
