@@ -1,0 +1,27 @@
+/* CSS Document */
+
+.bg-black{ background-color: rgba(14,14,14,1.00)}
+
+.carousel-caption{ top:200px}
+
+.jumbo{ height: 200px;}
+
+.bg-orange{background-color:#f0644f; color: aliceblue; font-weight: 600; text-align: center;}
+.m-right{border: 2px solid #f0644f; border-right: 2px solid white;}
+
+.underline{width: 100px; height: 2px; background-color: orangered;}
+
+.card{border: none;}
+.bg-light-gray{background-color: rgba(111,111,111,0.09)}
+
+.media img{ max-width: 120px; height: auto;}
+
+.underline-green{width: 70px; height: 2px; background-color: lawngreen;}
+.underline-blue{width: 70px; height: 2px; background-color: mediumblue;}
+.underline-black{width: 70px; height: 2px; background-color: black;}
+
+.card-body{text-align: center;}
+
+.blog .media img{ max-width: 200px; height: auto;}
+
+footer ul{text-decoration: none; list-style-type: none;}
