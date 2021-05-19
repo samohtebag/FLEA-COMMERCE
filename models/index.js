@@ -8,7 +8,7 @@ Product.belongsTo(Category, {
   onDelete: 'CASCADE'
 })
 
-Category.hasMany(Protect, {
+Category.hasMany(Product, {
   foreignKey: 'category_id'
 })
 
@@ -19,7 +19,7 @@ Product.belongsToMany(Tag,{
   foreignKey: 'product_id'
 })
 
-Tag.belongsToMany(Products,{
+Tag.belongsToMany(Product,{
     through: {
         model: ProductTag, 
     },
