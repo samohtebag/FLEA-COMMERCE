@@ -2,11 +2,11 @@ const sequelize = require('../config/connection');
 const { user, Category, Product, ProductTag, Tag } = require('../models');
 
 
-const categorySeed = require('./category-seed.json');
-const productSeed = require('./product-seed.json');
-const productTags = require('./productTag-seed.json');
-const tagSeed = require('./tag-seed.json');
-const userSeeds = require('./user-seed.json');
+const categorySeed = require('./category-seed');
+const productSeed = require('./product-seed');
+const productTags = require('./productTag-seed');
+const tagSeed = require('./tag-seed');
+const userSeeds = require('./user-seed');
 
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });

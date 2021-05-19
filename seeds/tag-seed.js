@@ -1,4 +1,6 @@
-[
+const { Tag } = require('../models');
+
+const tagData = [
   {
     "product_id": 1,
     "tag_id": 1
@@ -48,4 +50,9 @@
     "product_id": 12,
     "tag_id": 12
   }
-]
+
+];
+
+const seedTags = () => Tag.bulkCreate(tagData);
+
+module.exports = seedTags;
