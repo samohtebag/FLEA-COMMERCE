@@ -1,0 +1,19 @@
+
+    <div class="mb-5 pt-3">
+        <a href="/dashboard/create/"><button id="create-product" class="button is-primary is-pulled-right">Create Product</button></a>
+        
+        <h2 class="title pb-4">Dashboard: Your Products:</h2><hr>
+{{#if products.length}}
+    </div>
+
+    {{#each products as |product|}}
+        {{> product-details product}}
+        
+            <a href="/dashboard/{{product.id}}"><button class="button mb-5 ml-5 is-warning">Edit Product</button></a>
+        </div>
+    {{/each}}
+
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">you do not currently have any products</h6>
+
+{{/if}}
