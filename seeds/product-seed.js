@@ -2,9 +2,9 @@ const { Product } = require('../models');
 
 const productData = [
     {
-        "product_name": "Product 1",
-        "price": 29.99,
-        "stock": 22,
+        "product_name": "Hazy Crazy",
+        "price": 49.00,
+        "stock": 10,
         "category_id": 1
       },
       
