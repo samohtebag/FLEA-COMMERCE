@@ -1,12 +1,11 @@
-const sequelize = require('../config/connection');
-const { User, Category, Product, ProductTag, Tag } = require('../models');
-
 
 const categorySeed = require('./category-seed');
 const productSeed = require('./product-seed');
 const productTags = require('./productTag-seed');
 const tagSeed = require('./tag-seed');
 const userSeeds = require('./user-seed');
+
+const sequelize = require('../config/connection');
 
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
