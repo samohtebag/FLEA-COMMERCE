@@ -58,11 +58,11 @@ const productData = [
       },
 
     {
-      "product_name": "Product 5",
-      "product_price": 29.99,
-      "stock": 22,
-      "category_id": 5,
-      "product_details": "really goood weed"
+        "product_name": "Product 5",
+        "product_price": 29.99,
+        "stock": 22,
+        "category_id": 5,
+        "product_details": "really goood weed"
     }
   
   ];

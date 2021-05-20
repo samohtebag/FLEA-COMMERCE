@@ -13,10 +13,9 @@ router.get('/', (req, res) => {
             'product_price',
             'product_details',
             'stock',
-            'category_name'
           ],
         // Order the posts from most recent to least
-        order: [[ 'price', 'DESC']],
+        order: [[ 'product_price', 'DESC']],
         // From the User table, include the post creator's user name
         // From the Comment table, include all comments
         include: [
@@ -62,9 +61,10 @@ router.get('/product/:id', (req, res) => {
       attributes: [
         'id',
         'product_name',
-        'price',
+        'product_details',
+        'product_price',
         'stock',
-        'category_name'
+        
       ],
       include: [
         {
