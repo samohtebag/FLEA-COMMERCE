@@ -18,7 +18,8 @@ router.get('/', withAuth, (req, res) => {
       attributes: [
         'id',
         'product_name',
-        'price',
+        'product_price',
+        'product_details',
         'stock',
         'category_id',
       ],
@@ -64,7 +65,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
     attributes: [
       'id',
       'product_name',
-      'price',
+      'product_price',
+      'product_details',
       'stock',
       'category_id'
     ],

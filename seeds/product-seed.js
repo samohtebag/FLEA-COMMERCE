@@ -11,7 +11,7 @@ const productData = [
       
     {
         "product_name": "Purple Dragon",
-        "product_price": 49.00,
+        "product_price": 24.99,
         "stock": 23,
         "category_id": 2,
         "product_details": "really goood weed"
@@ -19,7 +19,7 @@ const productData = [
 
     {
         "product_name": "Bedtime Story",
-        "product_price": 49.00,
+        "product_price": 44.99,
         "stock": 12,
         "category_id": 3,
         "product_details": "really goood weed"
@@ -27,7 +27,7 @@ const productData = [
       
     {
         "product_name": "Girl Scout Cookies",
-        "product_price": 49.00,
+        "product_price": 34.99,
         "stock": 20,
         "category_id": 4,
         "product_details": "really goood weed"
