@@ -17,10 +17,20 @@ Product.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    
+    user_id: {
+      type: DataTypes.INTEGER,
+        references: {
+        model: 'user', 
+        key: 'id',
+      }
+
+    },
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     product_price: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
@@ -28,6 +38,12 @@ Product.init(
         isDecimal: true,
       },
     },
+
+    product_details: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
