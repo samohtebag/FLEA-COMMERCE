@@ -10,7 +10,8 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'product_name',
-            'price',
+            'product_price',
+            'product_details',
             'stock',
             'category_name'
           ],
