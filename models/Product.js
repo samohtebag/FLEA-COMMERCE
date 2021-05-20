@@ -30,7 +30,7 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    
+
     product_price: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
