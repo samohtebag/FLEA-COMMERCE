@@ -9,8 +9,8 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
   const productData = await Product.findAll({
-    attributes: ['id', 'product_name', 'product_price', 'stock', 'category_id'],
-    order: [['price', 'DESC']],
+    attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'category_id'],
+    order: [['product_price', 'DESC']],
     include: [{
       model: Category,
       attributes: ['id', 'category_name'],
@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
     const productData = await Product.findByPk(req.params.id, {
-      attributes: ['id', 'product_name', 'product_price', 'stock'],
+      attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock'],
     include: [{
       model: Category,
       attributes: ['id', 'category_name'],
@@ -62,7 +62,8 @@ router.post('/', (req, res) => {
 
   Product.create({
     product_name: req.body.product_name,
-    price: req.body.price,
+    product_price: req.body.product_price,
+    product_details: req.body.product_details,
     stock: req.body.stock,
 
   })
@@ -103,7 +104,7 @@ router.put('/:id', (req, res) => {
       // get list of current tag_ids
       const productTagIds = productTags.map(({ tag_id }) => tag_id);
       // create filtered list of new tag_ids
-      const newProductTags = req.body.tagIds
+      const newProductTags = req.body.tag_ids
         .filter((tag_id) => !productTagIds.includes(tag_id))
         .map((tag_id) => {
           return {
