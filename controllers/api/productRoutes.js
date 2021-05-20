@@ -1,5 +1,29 @@
 const router = require('express').Router();
 const { Product, Category, Tag} = require('../../models');
+const multer = require("multer");
+const cloudinary = require("cloudinary");
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
+
+    cloudinary.config({
+      cloud_name: process.env.CLOUD_NAME,
+      api_key: process.env.API_KEY,
+      api_secret: process.env.API_SECRET
+      });
+      const storage = new CloudinaryStorage({
+      cloudinary: cloudinary,
+      folder: "demo",
+      allowedFormats: ["jpg", "png"],
+      transformation: [{ width: 500, height: 500, crop: "limit" }]
+      });
+      const parser = multer({ storage: storage });
+
+const uploadimage = (image) => {
+  cloudinary.v2.uploader.upload(image, 
+  function(error, result) {
+    console.log(result, error)
+    return result.url
+  });
+}
 
 // The `/api/products` endpoint
 
@@ -90,6 +114,8 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
+  const image_url = uploadimage(req.body.product_image) 
+  req.body.product_image = image_url
   // update product data
   Product.update(req.body, {
     where: {

@@ -4,6 +4,7 @@ async function editFormHandler(event) {
     const product_name = document.querySelector('input[name="product_name"]').value;
     const product_details = document.querySelector('input[name="product_details"]').value;
     const product_price = document.querySelector('input[name="product-price"]').value;
+    const product_image = document.querySelector('input[name="product_image"]').value;
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
       ];
@@ -13,7 +14,8 @@ async function editFormHandler(event) {
         body: JSON.stringify({
             product_name,
             product_details,
-            product_price
+            product_price,
+            product_image
         }),
         headers: {
             'Content-Type': 'application/json'
