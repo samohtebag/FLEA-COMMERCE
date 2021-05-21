@@ -109,7 +109,7 @@ The division of work for this project is as follows.
 
   Steven Paul:
 
-  * API, Routes, WireFrame, 
+  * API, Routes, WireFrame, Front End
 
   Chloe Yu:
 
