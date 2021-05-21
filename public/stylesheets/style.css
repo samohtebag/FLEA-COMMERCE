@@ -2,9 +2,10 @@
 
 .bg-black{ background-color: rgba(14,14,14,1.00)}
 
-.carousel-caption{ top:200px}
+.carousel-caption{ top:100px}
 
-.jumbo{ height: 500px;}
+
+.jumbo{ height: 300px;}
 
 .bg-orange{background-color:#f0644f; color: aliceblue; font-weight: 600; text-align: center;}
 .m-right{border: 2px solid #f0644f; border-right: 2px solid white;}
@@ -62,4 +63,8 @@ footer ul{text-decoration: none; list-style-type: none;}
     .card {
         border: none;
         flex-basis: 30%;
+    }
+
+    #create-product{
+        margin-left: 50px;
     }
