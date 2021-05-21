@@ -4,6 +4,8 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const cloudinary = require('cloudinary').v2
+const bodyParser = require('body-parser');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -13,6 +15,12 @@ const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
+
+cloudinary.config({
+  cloud_name: "dj2ooceyg",
+  api_key: "236523814587654",
+  api_secret: "QpT1EUNdweeJ6Ng2URL1o3CD5jQ"
+});
 
 const sess = {
   secret: 'Super secret secret',
@@ -29,6 +37,9 @@ app.use(session(sess));
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
