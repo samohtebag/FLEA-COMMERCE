@@ -20,11 +20,17 @@ const { CloudinaryStorage } = require("multer-storage-cloudinary");
 
 const uploadimage = (image) => {
   console.log(image)
-  // cloudinary.v2.uploader.upload(image, 
-  // function(error, result) {
-  //   console.log(result, error)
-  //   return result.url
-  // });
+  return new Promise ((resolve, reject) => {
+    cloudinary.v2.uploader.upload(image, 
+  function(error, result) {
+    if(error) {
+      return reject (error)
+    } else {
+    console.log(result.url)
+    resolve( result.url)
+    }
+  })
+});
 }
 
 // The `/api/products` endpoint
@@ -120,6 +126,8 @@ router.put('/:id', (req, res) => {
   console.log(req.body)
   const image_url = uploadimage(req.body.product_image) 
   req.body.product_image = image_url
+  console.log(req.body)
+  
   // update product data
   Product.update(req.body, {
     where: {
