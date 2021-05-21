@@ -7,7 +7,7 @@
 <div class="listings">
         {{#each products as |product|}}
             {{> product-details product}}
-            <a href="/dashboard/{{product.id}}"><button class="button mb-5 ml-5 is-warning">Edit Product</button></a>
+            <a href="/product/{{product.id}}"><button class="button mb-5 ml-5 is-warning">Edit Product</button></a>
             </div>
         {{/each}}
 

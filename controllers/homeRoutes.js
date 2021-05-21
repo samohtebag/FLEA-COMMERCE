@@ -90,7 +90,7 @@ router.get('/product/:id', (req, res) => {
         // serialize the post data, removing extra sequelize meta data
         const product = dbProductData.get({ plain: true });
         // pass the posts and a session variable into the single post template
-        res.render('single-product', {
+        res.render('edit-product', {
             product,
             loggedIn: req.session.loggedIn
           });
