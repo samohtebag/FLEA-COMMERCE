@@ -1,5 +1,23 @@
 # Flea Commerce
 
+
+![html5](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
+![css3](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
+![javascript](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![bootstrap](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
+![jquery](https://img.shields.io/badge/jquery%20-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white)
+![mysql](https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white)
+![cloudinary](https://img.shields.io/badge/cloudinary-%23563D7.svg?&style=for-the-badge&logo=cloudinary&logoColor=white)
+![express](https://img.shields.io/badge/express-%2363D7.svg?&style=for-the-badge&logo=express&logoColor=white)
+![node](https://img.shields.io/badge/node-%235D7.svg?&style=for-the-badge&logo=node&logoColor=white)
+![sequelize](https://img.shields.io/badge/sequelize-%23323.svg?&style=for-the-badge&logo=sequelize&logoColor=white)
+![dotenv](https://img.shields.io/badge/DOTenv-%23E34F26.svg?&style=for-the-badge&logo=dotenv&logoColor=white)
+
+
+<br>
+
+
+
 ![License](https://img.shields.io/badge/License%3A-MIT-green.svg)
 
 ## Description
