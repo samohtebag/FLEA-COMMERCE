@@ -1,19 +1,21 @@
 async function editFormHandler(event) {
     event.preventDefault();
   
-    const product_name = document.querySelector('input[name="product_name"]').value;
-    const product_details = document.querySelector('input[name="product_details"]').value;
+    const product_name = document.querySelector('input[name="product-name"]').value;
+    const product_details = document.querySelector('input[name="product-details"]').value;
     const product_price = document.querySelector('input[name="product-price"]').value;
+    let product_image = document.querySelector('input[name="product_image"]').value;
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
       ];
 
-    const response = await fetch(`/api/posts/${id}`, {
+    const response = await fetch(`/api/products/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
             product_name,
             product_details,
-            product_price
+            product_price,
+            product_image
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -26,5 +28,6 @@ async function editFormHandler(event) {
         alert(response.statusText);
       }
   }
+
   
-  document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
+  document.querySelector('.edit-product-form').addEventListener('submit', editFormHandler);
