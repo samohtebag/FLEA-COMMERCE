@@ -1,19 +1,19 @@
 <article>
-  <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
+  <a href="/dashboard" class="is-pulled-right"> &larr; Back to Dashboard</a>
   <h2 class="title mt-5">Edit Product</h2><hr>
   <form class="edit-product-form">
     <div>
-        <label for="product-name">Product Name:</label>
+      <label for="product-name">Product Name:</label>
       <input class="input" name="product-name" type="text" value="{{product.product_name}}" />
     </div>
     <div>
-        <label for="product-details">Product Details:</label>
+      <label for="product-details">Product Details:</label>
       <input class="textarea" name="product-details" type="text" value="{{product.product_details}}" />
     </div>
-     <div>
-            <label for="product-price">Product Price</label>
-            <input class="input" type="text" id="product-price" name="product-price" placeholder="Insert product price here"/>
-        </div>
+    <div>
+      <label for="product-price">Product Price</label>
+      <input class="input" type="text" id="product-price" name="product-price" placeholder="Insert product price here"/>
+    </div>
  
     <button type="submit" class="button is-success">Save Product</button>
     <button type="button" class="button is-danger delete-post-btn">Delete Product</button>
