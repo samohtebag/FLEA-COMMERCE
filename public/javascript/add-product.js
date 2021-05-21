@@ -6,11 +6,11 @@ async function newFormHandler(event) {
     const product_price = document.querySelector('input[name="product-price"]').value;
 
     const stock = document.querySelector('input[name="stock"]').value;
-    const response = await fetch('/api/posts', {
+    const response = await fetch('/api/products', {
       method: 'POST',
       body: JSON.stringify({
         product_name,
-        product_content,
+        product_details,
         product_price,
         stock
 
