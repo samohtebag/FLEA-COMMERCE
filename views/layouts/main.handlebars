@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -8,12 +7,10 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>project 4</title>
+    <title>Flea Commerce</title>
   </head>
 
   <body>
-  
-     
 
     <div class="container-fluid bg-black">
       <nav class="container navbar navbar-expand-lg navbar-dark bg-black">
@@ -43,7 +40,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="logout" href="/logout">Logout</a>
-               
+
               </li>
             {{else}}
               <li class="nav-item active">
@@ -75,13 +72,11 @@
     </div>
 
     {{#if loggedIn}}
-    <div>
+      <div>
 
-    </div>
+      </div>
     {{else}}
 
-
-    
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -104,8 +99,10 @@
             />
             <div class="carousel-caption d-none d-md-block">
               <h1>FLEA COMMERCE</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button class="btn btn-info btn-lg">Shop Now</button>
+              <p>SELL IT ALL-SELL IT HERE</p>
+              <a href="/login">
+              <button class="btn btn-info btn-lg btn-danger">Login</button>
+              </a>
             </div>
           </div>
           <div class="carousel-item">
@@ -116,8 +113,10 @@
             />
             <div class="carousel-caption d-none d-md-block">
               <h1>FLEA COMMERCE</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button class="btn btn-info btn-lg">Shop Now</button>
+              <p>SELL IT ALL-SELL IT HERE</p>
+              <a href="/login">
+              <button class="btn btn-info btn-lg btn-danger">Login</button>
+              </a>
             </div>
           </div>
 
@@ -177,35 +176,40 @@
               <div class="row">
                 <h5>LINKS</h5>
               </div>
-              <div class="row mb-4">
+              <div class="row mb-6">
                 <div class="underline bg-light" style="width: 50px;"></div>
               </div>
-            <div>
-              <a href="/"><i class="fa fa-chevron-right" aria-hidden="true"></i>Homepage</a>
-            </div>
-            <div>
-              <a href="/dashboard"><i class="fa fa-chevron-right" aria-hidden="true"></i>Dashboard</a>
-            </div>
-            {{#if loggedIn}}
-            <div>
-               <a href="/logout"><i class="fa fa-chevron-right" aria-hidden="true"></i>Logout</a>
-            </div>
-               {{else}}
-            <div>
-              <a href="/login/"><i class="fa fa-chevron-right" aria-hidden="true"></i>Login</a>
-            </div>
+              <div>
+                <a href="/"><i
+                    class="fa fa-chevron-right"
+                    aria-hidden="true"
+                  ></i>Homepage</a>
+              </div>
+              <div>
+                <a href="/dashboard"><i
+                    class="fa fa-chevron-right"
+                    aria-hidden="true"
+                  ></i>Dashboard</a>
+              </div>
+              {{#if loggedIn}}
+                <div>
+                  <a href="/logout"><i
+                      class="fa fa-chevron-right"
+                      aria-hidden="true"
+                    ></i>Logout</a>
+                </div>
+              {{else}}
+                <div>
+                  <a href="/login/"><i
+                      class="fa fa-chevron-right"
+                      aria-hidden="true"
+                    ></i>Login</a>
+                </div>
               {{/if}}
-              
-                
-                  
-               
-           
-                
-            
 
             </div>
 
-            <div class="col-md-4 pl-4">
+            <div class="col-md-6 pl-4">
               <div class="row">
                 <h5>About</h5>
               </div>
@@ -218,7 +222,7 @@
                   fuga quia.<br />Vel inventore quis harum mollitia.</p>
               </div>
             </div>
-
+            {{! 
             <div class="col-md-4">
               <div class="row">
                 <h5>Tags</h5>
@@ -232,7 +236,7 @@
               <button class="btn btn-outline-light">WEIGHTS</button>
               <button class="btn btn-outline-light">WEED</button>
               <button class="btn btn-outline-light">EDIBLES</button>
-            </div>
+            </div> }}
           </div>
         </div>
       </div>

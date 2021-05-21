@@ -122,7 +122,7 @@ router.post('/', (req, res) => {
 });
 
 // update product
-router.put('/:id', (req, res) => {
+router.put('edit/:id', (req, res) => {
   console.log(req.body)
   const image_url = uploadimage(req.body.product_image) 
   req.body.product_image = image_url
