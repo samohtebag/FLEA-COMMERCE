@@ -2,36 +2,40 @@ const { ProductTag } = require('../models');
 
 const productTagData = [
     {
-        "tag_name": "example"
-    },
+        product_id: 1,
+        tag_id: 1
 
-    {
-        "tag_name": "example"
-    },
+      },
 
-    {
-        "tag_name": "example"
-    },
+      {
+        product_id: 2,
+        tag_id: 2
 
-    {
-        "tag_name": "example"
-    },
+      },
 
-    {
-        "tag_name": "example"
-    },
+      {
+        product_id: 3,
+        tag_id: 3
 
-    {
-        "tag_name": "example"
-    },
+      },
 
-    {
-        "tag_name": "example"
-    },
+      {
+        product_id: 4,
+        tag_id: 4
 
-    {
-        "tag_name": "example"
-    }
+      },
+
+      {
+        product_id: 5,
+        tag_id: 5
+
+      },
+
+      {
+        product_id: 6,
+        tag_id: 6
+
+      },
 ];
 
 const seedProductTags = () => ProductTag.bulkCreate(productTagData);

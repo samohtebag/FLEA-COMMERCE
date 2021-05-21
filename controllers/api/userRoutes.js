@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
           {
             //check models when they are finished
             model: Product,
-            attributes: ['id', 'product_name', 'price', 'stock']
+            attributes: ['id', 'product_name', 'product_price', 'stock','product_details']
           },
           //Do Tags and Categories need to be associated with the user?? just tags? neither??
           {
