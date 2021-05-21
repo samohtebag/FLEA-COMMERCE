@@ -163,6 +163,7 @@ router.post('/', (req, res) => {
   Product.create({
     product_name: req.body.product_name,
     user_id: req.session.user_id,
+    user_email: req.body.user_email,
     product_price: req.body.product_price,
     product_details: req.body.product_details,
     stock: req.body.stock,
