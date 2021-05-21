@@ -16,13 +16,15 @@ const { CloudinaryStorage } = require("multer-storage-cloudinary");
       transformation: [{ width: 500, height: 500, crop: "limit" }]
       });
       const parser = multer({ storage: storage });
+    
 
 const uploadimage = (image) => {
-  cloudinary.v2.uploader.upload(image, 
-  function(error, result) {
-    console.log(result, error)
-    return result.url
-  });
+  console.log(image)
+  // cloudinary.v2.uploader.upload(image, 
+  // function(error, result) {
+  //   console.log(result, error)
+  //   return result.url
+  // });
 }
 
 // The `/api/products` endpoint
@@ -86,6 +88,7 @@ router.post('/', (req, res) => {
 
   Product.create({
     product_name: req.body.product_name,
+    user_id: req.session.user_id,
     product_price: req.body.product_price,
     product_details: req.body.product_details,
     stock: req.body.stock,
@@ -93,7 +96,7 @@ router.post('/', (req, res) => {
   })
     .then((product) => {
       //if there's product tags, we need to create pairings to bulk create in the ProductTag model
-      if (req.body.tagIds.length) {
+      if (req.body.tagIds) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
           return {
             product_id: product.id,
@@ -114,6 +117,7 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
+  console.log(req.body)
   const image_url = uploadimage(req.body.product_image) 
   req.body.product_image = image_url
   // update product data

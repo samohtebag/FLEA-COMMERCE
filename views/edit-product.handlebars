@@ -15,14 +15,13 @@
             <input class="input" type="text" id="product-price" name="product-price" placeholder="Insert product price here"/>
     </div>
   
-  <input id='product_image' type='file' name='product_image'/>
+  <input type='file' name='product_image'/>
 
     <button type="submit" class="button is-success">save post</button>
     <button type="button" class="button is-danger delete-post-btn">delete post</button>
   </form>
 </article>
 
-{{> comments post.comments}}
-
+{{!-- {{> comments post.comments}} --}}
 <script src="/javascript/edit-product.js"></script>
 <script src="/javascript/delete-product.js"></script>
