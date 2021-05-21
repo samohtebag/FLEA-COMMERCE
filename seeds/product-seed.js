@@ -6,7 +6,8 @@ const productData = [
         "product_price": 49.00,
         "stock": 10,
         "category_id": 1,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 1
       },
       
     {
@@ -14,7 +15,8 @@ const productData = [
         "product_price": 24.99,
         "stock": 23,
         "category_id": 2,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 2
       },
 
     {
@@ -22,7 +24,8 @@ const productData = [
         "product_price": 44.99,
         "stock": 12,
         "category_id": 3,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 3
       },
       
     {
@@ -30,7 +33,8 @@ const productData = [
         "product_price": 34.99,
         "stock": 20,
         "category_id": 4,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 4
       },
 
     {
@@ -38,7 +42,8 @@ const productData = [
         "product_price": 29.99,
         "stock": 22,
         "category_id": 2,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 5
       },
 
     {
@@ -46,7 +51,8 @@ const productData = [
         "product_price": 29.99,
         "stock": 22,
         "category_id": 3,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 2
       },
       
     {
@@ -54,7 +60,8 @@ const productData = [
         "product_price": 29.99,
         "stock": 22,
         "category_id": 4,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 3
       },
 
     {
@@ -62,7 +69,8 @@ const productData = [
         "product_price": 29.99,
         "stock": 22,
         "category_id": 5,
-        "product_details": "really goood weed"
+        "product_details": "really goood weed",
+        "user_id": 5
     }
   
   ];
