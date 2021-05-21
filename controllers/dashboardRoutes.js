@@ -57,6 +57,7 @@ router.get('/create', withAuth, (req, res) => {
 
 // A route to edit a post
 router.get('/edit/:id', withAuth, (req, res) => {
+  console.log("In Edit Route...")
   // All of the users posts are obtained from the database
   Product.findOne({
     where: {
@@ -86,6 +87,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
     ]
   })
     .then(dbProductData => {
+      console.log("***************");
+      console.log(dbProductData)
       // if no product by that id exists, return an error
       if (!dbProductData) {
         res.status(404).json({ message: 'No product found with this id' });
@@ -93,6 +96,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       }
       // serialize data before passing to template
       const product = dbProductData.get({ plain: true });
+      console.log(product);
       res.render('edit-product', { product, loggedIn: true });
     })
     .catch(err => {
