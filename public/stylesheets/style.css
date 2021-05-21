@@ -25,3 +25,27 @@
 .blog .media img{ max-width: 200px; height: auto;}
 
 footer ul{text-decoration: none; list-style-type: none;}
+
+#email-login{     margin-left: 35px; }
+
+#email-signup{     margin-left: 41px;}
+
+#username-signup{    margin-left: 4px;}
+
+#password-signup{ margin-left: 10px;}
+
+#password-login{ margin-left: 3px;}
+
+.signup-form{    margin-left: 605px;}
+
+.login-form{margin-left: 650px}
+
+.is-success {margin-left: 150px;}
+
+.title{
+    text-align: center;
+}
+
+.login-btn{
+    margin-left: 100px;
+}
