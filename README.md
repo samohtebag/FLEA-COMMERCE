@@ -105,16 +105,16 @@ The division of work for this project is as follows.
 Connect with us on Github and LinkedIn! 
 
   [![GitHub](https://img.shields.io/badge/Jason%20Barbanel-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/Jbarbss) 
-  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
+  [![LinkedIn](https://img.shields.io/badge/Jason%20Barbanel%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/jason-barbanel/)
 
   [![GitHub](https://img.shields.io/badge/Gabe%20Thomas-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/samohtebag) 
-  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
+  [![LinkedIn](https://img.shields.io/badge/Gabe%20Thomas%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/gabriel-thomas513/)
 
   [![GitHub](https://img.shields.io/badge/Steven%20Paul-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/etown285) 
-  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
+  [![LinkedIn](https://img.shields.io/badge/Steven%20Paul%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/steven-paul-bb1564a2/)
 
   [![GitHub](https://img.shields.io/badge/Chloe%20Yu-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/chloeyu17) 
-  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
+  [![LinkedIn](https://img.shields.io/badge/Chloe%20Yu%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/chloe-yu-3037a2156)
 
   [![GitHub](https://img.shields.io/badge/Patrick%20Walker-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/pat31477) 
   [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
