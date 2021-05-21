@@ -44,6 +44,11 @@ Product.init(
       allowNull: false,
     },
 
+    product_image: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,

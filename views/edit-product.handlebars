@@ -10,17 +10,18 @@
       <label for="product-details">Product Details:</label>
       <input class="textarea" name="product-details" type="text" value="{{product.product_details}}" />
     </div>
-    <div>
-      <label for="product-price">Product Price</label>
-      <input class="input" type="text" id="product-price" name="product-price" placeholder="Insert product price here"/>
+     <div>
+            <label for="product-price">Product Price</label>
+            <input class="input" type="text" id="product-price" name="product-price" placeholder="Insert product price here"/>
     </div>
- 
-    <button type="submit" class="button is-success">Save Product</button>
-    <button type="button" class="button is-danger delete-post-btn">Delete Product</button>
+  
+  <input type='text' name='product_image'/>
+
+    <button type="submit" class="button is-success">save product</button>
+    <button type="button" class="button is-danger delete-post-btn">delete product</button>
   </form>
 </article>
 
-{{> comments post.comments}}
-
+{{!-- {{> comments post.comments}} --}}
 <script src="/javascript/edit-product.js"></script>
 <script src="/javascript/delete-product.js"></script>
