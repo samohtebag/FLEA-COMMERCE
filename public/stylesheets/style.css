@@ -17,6 +17,11 @@
 
 .media img{ max-width: 120px; height: auto;}
 
+.logo{
+    max-height: 75px;
+    max-width: 50px
+}
+
 .underline-green{width: 70px; height: 2px; background-color: lawngreen;}
 .underline-blue{width: 70px; height: 2px; background-color: mediumblue;}
 .underline-black{width: 70px; height: 2px; background-color: black;}
