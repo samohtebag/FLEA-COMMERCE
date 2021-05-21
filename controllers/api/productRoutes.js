@@ -89,6 +89,25 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+router.post("/image-upload", async (req, res) => {
+  // collected image from a user
+
+  try{
+  const data =  {
+    image: req.body.image,
+  }
+  console.log(req.body);
+
+    // upload image here
+    const pictureUplaod = await cloudinary.uploader.upload(data.image);
+  res.status(200).json(pictureUplaod);
+  } 
+ catch (err) {
+  res.status(500).json(err);
+}
+});
+
+
 // create new product
 router.post('/', (req, res) => {
 
