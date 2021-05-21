@@ -124,7 +124,7 @@ Connect with us on Github and LinkedIn!
 
 ![License](https://img.shields.io/badge/License%3A-MIT-green.svg)
 
-Copyright (c) 2021 
+Copyright (c) 202
 
 Jason Barbanel
 
