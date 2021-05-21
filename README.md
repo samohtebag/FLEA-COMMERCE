@@ -40,6 +40,13 @@
 - Sequelize
 - Dotenv
 - Handlebars
+- BootStrap
+- Cloudinary
+- JavaScript
+- HTML
+- REST Api
+- CSS
+
 
 ## Usage
 
@@ -76,23 +83,23 @@ The division of work for this project is as follows.
 
   Jason Barbanel: 
   
-  * API, Handle Bars, Routes, Front End, SQL
+  * API, Handle Bars, Routes, Front End, SQL, Cloudinary, Repo creation
 
   Gabe Thomas:
 
-  * API, Routes, Seeds, Front End
+  * API, Handle Bars, Routes, Front End, Seeds, WireFrame
 
   Steven Paul:
 
-  * Cloudinary, Seeds, API
+  * API, Routes, WireFrame, 
 
   Chloe Yu:
 
-  * Handle Bars, Routes, Fronte End
+  * Seeds, API, Routes, PowerPoint
 
   Patrick Walker:
 
-  * Routes, Front End, Readme, SQL
+  * Handle Bars, Routes, Front End, SQL, Readme, PowerPoint
 
   Massive THANK YOU to Kieran Anderson (T/A) for all of the help getting this working and for being so patient and understanding while we worked though this. 
 

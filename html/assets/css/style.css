@@ -1,27 +1,65 @@
 /* CSS Document */
 
-.bg-black{ background-color: rgba(14,14,14,1.00)}
+.bg-black{
+    background-color: rgba(14,14,14,1.00);
+}
 
-.carousel-caption{ top:200px}
+.carousel-caption{
+    top: 200px
+}
 
-.jumbo{ height: 500px;}
+.jumbo {
+    height: 500px;
+}
 
-.bg-orange{background-color:#f0644f; color: aliceblue; font-weight: 600; text-align: center;}
-.m-right{border: 2px solid #f0644f; border-right: 2px solid white;}
+.bg-orange {
+    background-color:#f0644f; color: aliceblue; font-weight: 600; text-align: center;
+}
 
-.underline{width: 100px; height: 2px; background-color: orangered;}
+.m-right {
+    border: 2px solid #f0644f; border-right: 2px solid white;
+}
 
-.card{border: none;}
-.bg-light-gray{background-color: rgba(111,111,111,0.09)}
+.underline {
+    width: 100px; height: 2px; background-color: orangered;
+}
 
-.media img{ max-width: 120px; height: auto;}
+.card {
+    border: none;
+}
 
-.underline-green{width: 70px; height: 2px; background-color: lawngreen;}
-.underline-blue{width: 70px; height: 2px; background-color: mediumblue;}
-.underline-black{width: 70px; height: 2px; background-color: black;}
+.bg-light-gray {
+    background-color: rgba(111,111,111,0.09);
+}
 
-.card-body{text-align: center;}
+.media img {
+    max-width: 120px; height: auto;
+}
 
-.blog .media img{ max-width: 200px; height: auto;}
+.underline-green {
+    width: 70px; height: 2px; background-color: lawngreen;
+}
 
-footer ul{text-decoration: none; list-style-type: none;}
+.underline-blue {
+    width: 70px; height: 2px; background-color: mediumblue;
+}
+
+.underline-black {
+    width: 70px; height: 2px; background-color: black;
+}
+
+.login-form {
+    margin-left: 50rem !important;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.blog .media img {
+    max-width: 200px; height: auto;
+}
+
+footer ul {
+    text-decoration: none; list-style-type: none;
+}
