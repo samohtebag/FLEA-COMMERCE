@@ -166,6 +166,7 @@ router.post('/', (req, res) => {
     user_email: req.body.user_email,
     product_price: req.body.product_price,
     product_details: req.body.product_details,
+    user_email: req.body.user_email,
     stock: req.body.stock,
 
   })
