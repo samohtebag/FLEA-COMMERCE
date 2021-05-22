@@ -16,8 +16,7 @@ const { CloudinaryStorage } = require("multer-storage-cloudinary");
       transformation: [{ width: 500, height: 500, crop: "limit" }]
       });
       const parser = multer({ storage: storage });
-    
-
+  
 const uploadimage = (image) => {
   console.log(image)
   return new Promise ((resolve, reject) => {
@@ -156,7 +155,6 @@ router.post("/image-upload", async (req, res) => {
 }
 });
 
-
 // create new product
 router.post('/', (req, res) => {
 
@@ -168,7 +166,6 @@ router.post('/', (req, res) => {
     product_details: req.body.product_details,
     user_email: req.body.user_email,
     stock: req.body.stock,
-
   })
     .then((product) => {
       //if there's product tags, we need to create pairings to bulk create in the ProductTag model
@@ -191,9 +188,7 @@ router.post('/', (req, res) => {
     });
 });
 
-
-
-router.delete('/product/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
     where: {
