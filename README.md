@@ -84,11 +84,9 @@ The division of work for this project is as follows.
 
   Steven Paul:
 
-<<<<<<< HEAD
-  * API, Routes, WireFrame, Front End
-=======
+
   * Cloudinary, Seeds, API
->>>>>>> 106db7b8da966e20506d2379f4ce921ce1c07ed4
+
 
   Chloe Yu:
 
