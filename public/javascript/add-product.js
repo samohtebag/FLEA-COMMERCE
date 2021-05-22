@@ -14,8 +14,8 @@ async function newFormHandler(event) {
         product_price,
         user_email,
         stock
-
       }),
+      
       headers: {
         'Content-Type': 'application/json'
       }

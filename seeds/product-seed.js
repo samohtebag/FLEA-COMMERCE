@@ -7,7 +7,8 @@ const productData = [
         "stock": 10,
         "category_id": 1,
         "product_details": "really goood weed",
-        "user_id": 1
+        "user_id": 1,
+        "user_email": "Jason@gmail.com"
       },
       
     {
@@ -16,7 +17,8 @@ const productData = [
         "stock": 23,
         "category_id": 2,
         "product_details": "really goood weed",
-        "user_id": 2
+        "user_id": 2,
+        "user_email": "Jason@gmail.com"
       },
 
     {
@@ -25,7 +27,8 @@ const productData = [
         "stock": 12,
         "category_id": 3,
         "product_details": "really goood weed",
-        "user_id": 3
+        "user_id": 3,
+        "user_email": "Jason@gmail.com"
       },
       
     {
@@ -34,7 +37,8 @@ const productData = [
         "stock": 20,
         "category_id": 4,
         "product_details": "really goood weed",
-        "user_id": 4
+        "user_id": 4,
+        "user_email": "Jason@gmail.com"
       },
 
     {
@@ -43,7 +47,8 @@ const productData = [
         "stock": 22,
         "category_id": 2,
         "product_details": "really goood weed",
-        "user_id": 5
+        "user_id": 5,
+        "user_email": "Jason@gmail.com"
       },
 
     {
@@ -52,7 +57,8 @@ const productData = [
         "stock": 22,
         "category_id": 3,
         "product_details": "really goood weed",
-        "user_id": 2
+        "user_id": 2,
+        "user_email": "Jason@gmail.com"
       },
       
     {
@@ -61,7 +67,8 @@ const productData = [
         "stock": 22,
         "category_id": 4,
         "product_details": "really goood weed",
-        "user_id": 3
+        "user_id": 3,
+        "user_email": "Jason@gmail.com"
       },
 
     {
@@ -70,7 +77,8 @@ const productData = [
         "stock": 22,
         "category_id": 5,
         "product_details": "really goood weed",
-        "user_id": 5
+        "user_id": 5,
+        "user_email": "Jason@gmail.com"
     }
   
   ];
