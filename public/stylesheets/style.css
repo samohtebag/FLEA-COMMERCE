@@ -1,25 +1,50 @@
 /* CSS Document */
 
-.bg-black{ background-color: rgba(14,14,14,1.00)}
+.bg-black { 
+    background-color: rgba(14,14,14,1.00);
+}
 
-.carousel-caption{ top:100px}
+.carousel-caption { 
+    top: 100px;
+}
 
+.flea-title1 {
+    color: black;
+}
+
+body > div.container-fluid.offer.pt-3.pb-3.bg-orange.d-none.d-md-block > div > div > div:nth-child(2) > p > a {
+    color: orange;
+}
 
 .jumbo{ height: 300px;
         object-fit: cover;
 }
 
-.bg-orange{background-color:#f0644f; color: aliceblue; font-weight: 600; text-align: center;}
-.m-right{border: 2px solid #f0644f; border-right: 2px solid white;}
+.bg-orange { 
+    background-color:#f0644f; color: aliceblue; font-weight: 600; text-align: center;
+}
 
-.underline{width: 100px; height: 2px; background-color: orangered;}
+.m-right {
+    border: 2px solid #f0644f; border-right: 2px solid white;
+}
 
-.card{border: none;}
-.bg-light-gray{background-color: rgba(111,111,111,0.09)}
+.underline {
+    width: 100px; height: 2px; background-color: orangered;
+}
 
-.media img{ max-width: 120px; height: auto;}
+.card {
+    border: none;
+}
 
-.logo{
+.bg-light-gray {
+    background-color: rgba(111,111,111,0.09)
+}
+
+.media img {
+    max-width: 120px; height: auto;
+}
+
+.logo {
     max-height: 75px;
     max-width: 50px
 }
