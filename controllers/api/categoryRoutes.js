@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
       attributes: ['id', 'category_name'],
       include: [{
         model: Product,
-        attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'category_id'],
+        attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'category_id', 'user_email', 'product_image'],
       }],
     });
     res.status(200).json(categoryData);
@@ -28,7 +28,7 @@ router.get('/:id', async (req, res) => {
       attributes: ['id', 'category_name'],
       include: {
         model: Product,
-        attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'category_id'],
+        attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'category_id', 'user_email', 'product_image'],
       },
     });
     if (!categoryData) {
@@ -70,6 +70,7 @@ router.put('/:id', (req, res) => {
     })
     .catch((err) => res.json(err));
 });
+
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value

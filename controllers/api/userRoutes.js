@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
           {
             //check models when they are finished
             model: Product,
-            attributes: ['id', 'product_name', 'product_price', 'stock', 'product_details']
+            attributes: ['id', 'product_name', 'product_price', 'stock', 'product_details', 'user_email', 'product_image']
           },
           //Do Tags and Categories need to be associated with the user?? just tags? neither??
           {
@@ -102,6 +102,7 @@ router.post('/', (req, res) => {
       });
     });
   });
+
 
   router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {

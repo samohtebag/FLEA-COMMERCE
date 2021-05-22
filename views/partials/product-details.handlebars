@@ -1,18 +1,17 @@
 <div class="card mb-6">
   <header class="card-header card-header-title has-background-grey-lighter">
-    
         <div class="column">
             <p class=" has-text-primary-light"></p>
       <a href="/post/{{id}}"  class="has-text-black is-capitalized is-pulled-left">{{title}} </a></p>
       </div>
-
       <div class="column">
       <span class=""> </span>
       </div>
-    
   </header>
-
     <div class="card-content">
+        <div>
+           <img src="{{product_image}}" alt="alternatetext">
+        </div>
         <div class="content has-text-justified">
             <strong>{{product_name}}</strong>
             </div>
@@ -22,8 +21,10 @@
              <div>
                 {{product_price}}
             </div>
-            
-            
-        
-           
+            <div>
+                {{stock}}
+            </div>
+            <div>
+                {{user_email}}
+            </div>
     </div>
