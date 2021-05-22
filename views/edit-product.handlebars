@@ -20,16 +20,22 @@
     </div>
     <div>
       <label for="product-price">Email:</label>
-      <input class="textarea" name="user_email" id="user_email" type="text" value="{{product.user_emails}}" />
+      <input class="textarea" name="user_email" id="user_email" type="text" value="{{product.user_email}}" />
+    </div>
+    <div>
+      <label for="product-image">Product Image URL:</label>
+      <input class="textarea" name="product_image" id="product_image" type="text" value="{{product.product_image}}" />
     </div>
   
-  <input type='text' name='product_image'/>
+  
+  {{!-- <input type='text' name='product_image'/> --}}
 
-    <button type="submit" class="button is-success">save product</button>
+    <button type="submit" class="button is-success save-post-btn">save product</button>
     <button type="button" class="button is-danger delete-post-btn">delete product</button>
   </form>
 </article>
 
 {{!-- {{> comments post.comments}} --}}
+
 <script src="/javascript/edit-product.js"></script>
- <script src="/javascript/delete-post.js"></script>
+<script src="/javascript/delete-product.js"></script>

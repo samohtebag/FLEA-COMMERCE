@@ -2,85 +2,67 @@ const { Product } = require('../models');
 
 const productData = [
   {
-    "product_name": "Hazy Crazy",
-    "product_price": 49.00,
-    "stock": 10,
-    "category_id": 1,
-    "product_details": "really goood weed",
-    "user_id": 1,
-    "user_email": "Jason@gmail.com"
-  },
-    
-  {
-    "product_name": "Purple Dragon",
-    "product_price": 24.99,
-    "stock": 23,
-    "category_id": 2,
-    "product_details": "really goood weed",
-    "user_id": 2,
-    "user_email": "Jason@gmail.com"
-  },
-
-  {
-    "product_name": "Bedtime Story",
-    "product_price": 44.99,
-    "stock": 12,
-    "category_id": 3,
-    "product_details": "really goood weed",
-    "user_id": 3,
-    "user_email": "Jason@gmail.com"
-  },
-    
-  {
-    "product_name": "Girl Scout Cookies",
-    "product_price": 34.99,
-    "stock": 20,
-    "category_id": 4,
-    "product_details": "really goood weed",
-    "user_id": 4,
-    "user_email": "Jason@gmail.com"
-  },
-
-  {
-    "product_name": "Product 2",
-    "product_price": 29.99,
-    "stock": 22,
-    "category_id": 2,
-    "product_details": "really goood weed",
-    "user_id": 5,
-    "user_email": "Jason@gmail.com"
-  },
-
-  {
-    "product_name": "Product 3",
-    "product_price": 29.99,
-    "stock": 22,
-    "category_id": 3,
-    "product_details": "really goood weed",
-    "user_id": 2,
-    "user_email": "Jason@gmail.com"
-  },
-    
-  {
-    "product_name": "Product 4",
-    "product_price": 29.99,
-    "stock": 22,
-    "category_id": 4,
-    "product_details": "really goood weed",
-    "user_id": 3,
-    "user_email": "Jason@gmail.com"
-  },
-
-  {
-    "product_name": "Product 5",
-    "product_price": 29.99,
-    "stock": 22,
-    "category_id": 5,
-    "product_details": "really goood weed",
-    "user_id": 5,
-    "user_email": "Jason@gmail.com"
-  }
+      "product_name": "Western Range Mushroom Snack",
+      "product_price": 9.00,
+      "stock": 10,
+      "category_id": 1,
+      "product_details": "Smokey Bacon",
+      "user_id": 5,
+      "product_image": "http://res.cloudinary.com/dj2ooceyg/image/upload/c_scale,w_150/v1621649108/Smokey_Bacon_Front_re5eyz.png",
+      "user_email": "jay@gmail.com"
+    },
+    {
+      "product_name": "Western Range Mushroom Snack",
+      "product_price": 9.00,
+      "stock": 10,
+      "category_id": 1,
+      "product_details": "Spicy Cajun",
+      "user_id": 1,
+      "product_image": "http://res.cloudinary.com/dj2ooceyg/image/upload/c_scale,w_150/v1621649108/Spicy_Cajun_Front_mopzpz.png",
+      "user_email": "chloe@gmail.com"
+    },
+    {
+      "product_name": "Western Range Musroom Snack",
+      "product_price": 9.00,
+      "stock": 10,
+      "category_id": 1,
+      "product_details": "Sweet Chili",
+      "user_id": 2,
+      "product_image": "http://res.cloudinary.com/dj2ooceyg/image/upload/c_scale,w_150/v1621649108/Sweet_Chili_Front_qfesyk.png",
+      "user_email": "pat@gmail.com"
+    },  
+    {
+      "product_name": "Western Range Beef Jerky",
+      "product_price": 10.00,
+      "stock": 10,
+      "category_id": 1,
+      "product_details": "Original",
+      "user_id": 4,
+      "product_image": "http://res.cloudinary.com/dj2ooceyg/image/upload/c_scale,w_150/v1621653205/MockupWR_BeefJerky_No_Halal_bg8392.png",
+      "user_email": "gabe@gmail.com"
+    },  
+    {
+      "product_name": "Western Range Beef Jerky",
+      "product_price": 10.00,
+      "stock": 10,
+      "category_id": 2,
+      "product_details": "Jalapeño",
+      "user_id": 5,
+      "product_image": "http://res.cloudinary.com/dj2ooceyg/image/upload/c_scale,w_150/v1621653205/MockupWR_Jalapeno_No_Halal_yo5nxj.png",
+      "user_email": "jay@gmail.com"
+    },  
+    {
+      "product_name": "Western Range Beef Jerky",
+      "product_price": 10.00,
+      "stock": 10,
+      "category_id": 2,
+      "product_details": "Teriyaki",
+      "user_id": 1,
+      "product_image": "http://res.cloudinary.com/dj2ooceyg/image/upload/c_scale,w_150/v1621653206/MockupWR_Teriyaki_No_Halal_xafd7s.png",
+      "user_email": "chloe@gmail.com"
+    },  
 ];
+
 
 const seedProducts = () => Product.bulkCreate(productData);
 

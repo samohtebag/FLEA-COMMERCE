@@ -4,35 +4,37 @@ const { User, Product, Category, Tag } = require('../models');
 
 // Render the home page
 router.get('/', (req, res) => {
-  Product.findAll({
-  // Query configuration
-  // From the Product table, include the product ID, URL, title, and the timestamp from post creation
-    attributes: [
-      'id',
-      'product_name',
-      'product_price',
-      'product_details',
-      'stock',
-    ],
-    // Order the posts from most recent to least
-    order: [[ 'product_price', 'DESC']],
-    // From the User table, include the post creator's user name
-    // From the Comment table, include all comments
-    include: [
-      {
-          model: User,
-          attributes: ['username']
-      },
-      {
-          model: Category,
-          attributes: ['id', 'category_name'],
-      },
-      {
-          model: Tag,
-          attributes: ['id', 'tag_name'],
-      }
-    ]
-  })
+    Product.findAll({
+        // Query configuration
+        // From the Product table, include the product ID, URL, title, and the timestamp from post creation
+        attributes: [
+            'id',
+            'product_name',
+            'product_price',
+            'product_details',
+            'user_email',
+            'product_image',
+            'stock'
+          ],
+        // Order the posts from most recent to least
+        order: [[ 'product_price', 'DESC']],
+        // From the User table, include the post creator's user name
+        // From the Comment table, include all comments
+        include: [
+            {
+                model: User,
+                attributes: ['username']
+            },
+            {
+                model: Category,
+                attributes: ['id', 'category_name'],
+            },
+            {
+                model: Tag,
+                attributes: ['id', 'tag_name'],
+            }
+        ]
+    })
     // render the posts
     .then(dbProductData => {
       // create an array for the posts, using the get method to trim extra sequelize object data out
@@ -63,9 +65,11 @@ router.get('/product/:id', (req, res) => {
         'product_name',
         'product_details',
         'product_price',
-        'stock',
+        'user_email',
+        'product_image',
+        'stock'
+        
       ],
-
       include: [
         {
             model: User,

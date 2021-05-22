@@ -22,6 +22,8 @@ router.get('/', withAuth, (req, res) => {
         'product_details',
         'stock',
         'category_id',
+        'user_email',
+        'product_image'
       ],
       include: [
         {
@@ -70,7 +72,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
       'product_details',
       'stock',
       "user_email",
-      'category_id'
+      'category_id',
+      'product_image'
     ],
     include: [
       {

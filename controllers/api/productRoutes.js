@@ -16,7 +16,8 @@ const { CloudinaryStorage } = require("multer-storage-cloudinary");
       transformation: [{ width: 500, height: 500, crop: "limit" }]
       });
       const parser = multer({ storage: storage });
-  
+    
+
 const uploadimage = (image) => {
   console.log(image)
   return new Promise ((resolve, reject) => {
@@ -40,7 +41,7 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
   const productData = await Product.findAll({
-    attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'category_id'],
+    attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'category_id', 'user_email', 'product_image'],
     order: [['product_price', 'DESC']],
     include: [{
       model: Category,
@@ -60,14 +61,7 @@ router.get('/', async (req, res) => {
 });
 
 // update product
-router.put('/edit/:id', (req, res) => {
-  
-//router.get('/product/:id', (req, res) => {
-    console.log("In Edit Route...")
-    console.log(req.body)
-    const image_url = uploadimage(req.body.product_image) 
-    req.body.product_image = image_url
-    console.log(req.body)
+router.put('/:id', (req, res) => {
     
     // update product data
     Product.update(req.body, {
@@ -76,35 +70,10 @@ router.put('/edit/:id', (req, res) => {
       },
     })
       .then((product) => {
-        // find all associated tags from ProductTag
-        return ProductTag.findAll({ where: { product_id: req.params.id } });
+        res.status(200).json(product);
       })
-      .then((productTags) => {
-        // get list of current tag_ids
-        const productTagIds = productTags.map(({ tag_id }) => tag_id);
-        // create filtered list of new tag_ids
-        const newProductTags = req.body.tag_ids
-          .filter((tag_id) => !productTagIds.includes(tag_id))
-          .map((tag_id) => {
-            return {
-              product_id: req.params.id,
-              tag_id,
-            };
-          });
-        // figure out which ones to remove
-        const productTagsToRemove = productTags
-          .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
-          .map(({ id }) => id);
-  
-        // run both actions
-        return Promise.all([
-          ProductTag.destroy({ where: { id: productTagsToRemove } }),
-          ProductTag.bulkCreate(newProductTags),
-        ]);
-      })
-      .then((updatedProductTags) => res.json(updatedProductTags))
       .catch((err) => {
-        // console.log(err);
+        console.log(err);
         res.status(400).json(err);
       });
   });
@@ -114,7 +83,7 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
     const productData = await Product.findByPk(req.params.id, {
-      attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock'],
+      attributes: ['id', 'product_name', 'product_price', 'product_details', 'stock', 'user_email', 'product_image'],
     include: [{
       model: Category,
       attributes: ['id', 'category_name'],
@@ -155,6 +124,7 @@ router.post("/image-upload", async (req, res) => {
 }
 });
 
+
 // create new product
 router.post('/', (req, res) => {
 
@@ -166,6 +136,8 @@ router.post('/', (req, res) => {
     product_details: req.body.product_details,
     user_email: req.body.user_email,
     stock: req.body.stock,
+    product_image: req.body.product_image
+
   })
     .then((product) => {
       //if there's product tags, we need to create pairings to bulk create in the ProductTag model
@@ -188,6 +160,8 @@ router.post('/', (req, res) => {
     });
 });
 
+
+
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
@@ -198,7 +172,7 @@ router.delete('/:id', (req, res) => {
   .then((deleteProduct) => {
     res.json(deleteProduct);
   })
-  .catchThrow((err) => res.json(err));
+  .catch((err) => res.json(err));
 });
 
 module.exports = router;
