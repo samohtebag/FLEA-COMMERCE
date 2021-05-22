@@ -38,7 +38,7 @@
 
 - You must install Both Node.js and MySQL on your computer.
 - Clone the repo by copying and pasting in your command line: 
-- `git clone git@github.com:/Jbarbss/Project-2`
+- `git clone git@github.com:Jbarbss/FLEA-COMMERCE`
 - Navigate to the root directory and run: 
 - `npm install`
 - Navigate to the root directory: 
@@ -76,8 +76,8 @@
    
  ## Links
  
-  * Application URL: (https://Jbarbss.github.io/Project-2/)
-  * Github Repository URL: (https://github.com/Jbarbss/Project-2)
+  * Application URL: (https://Jbarbss.github.io/FLEA-COMMERCE/)
+  * Github Repository URL: (https://github.com/Jbarbss/FLEA-COMMERCE)
   * Heroku URL: (https://cryptic-spire-79502.herokuapp.com/)
 
 
