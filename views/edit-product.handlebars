@@ -11,11 +11,15 @@
       <input class="textarea" name="product-details" type="text" value="{{product.product_details}}" />
     </div>
      <div>
-            <label for="product-price">Product Price</label>
-            <input class="input" type="text" id="product-price" name="product-price" placeholder="Insert product price here"/>
+        <label for="product-price">Product Price</label>
+        <input class="textarea" name="product-price" type="text" value="{{product.product_price}}" />
+    </div>
+    <div>
+      <label for="stock">Product Stock:</label>
+      <input class="textarea" name="stock" type="text" value="{{product.stock}}" />
     </div>
   
-  <input type='text' name='product_image'/>
+  {{!-- <input type='text' name='product_image'/> --}}
 
     <button type="submit" class="button is-success">save product</button>
     <button type="button" class="button is-danger delete-post-btn">delete product</button>
