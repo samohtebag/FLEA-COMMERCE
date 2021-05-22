@@ -84,7 +84,9 @@ The division of work for this project is as follows.
 
   Steven Paul:
 
+
   * Cloudinary, Seeds, API
+
 
   Chloe Yu:
 
