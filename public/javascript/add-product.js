@@ -4,7 +4,7 @@ async function newFormHandler(event) {
     const product_name = document.querySelector('input[name="product-name"]').value;
     const product_details = document.querySelector('input[name="product-details"]').value;
     const product_price = document.querySelector('input[name="product-price"]').value;
-
+    const user_email = document.querySelector('input[name="user_email"]').value;
     const stock = document.querySelector('input[name="stock"]').value;
     const response = await fetch('/api/products', {
       method: 'POST',
@@ -12,6 +12,7 @@ async function newFormHandler(event) {
         product_name,
         product_details,
         product_price,
+        user_email,
         stock
 
       }),
