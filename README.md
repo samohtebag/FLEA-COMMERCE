@@ -6,12 +6,13 @@
 ![javascript](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![bootstrap](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
 ![jquery](https://img.shields.io/badge/jquery%20-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white)
-![mysql](https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white)
+![mysql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![cloudinary](https://img.shields.io/badge/cloudinary-%23563D7.svg?&style=for-the-badge&logo=cloudinary&logoColor=white)
-![express](https://img.shields.io/badge/express-%2363D7.svg?&style=for-the-badge&logo=express&logoColor=white)
-![node](https://img.shields.io/badge/node-%235D7.svg?&style=for-the-badge&logo=node&logoColor=white)
+![express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![sequelize](https://img.shields.io/badge/sequelize-%23323.svg?&style=for-the-badge&logo=sequelize&logoColor=white)
 ![dotenv](https://img.shields.io/badge/DOTenv-%23E34F26.svg?&style=for-the-badge&logo=dotenv&logoColor=white)
+![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 
 <br>
