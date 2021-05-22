@@ -24,8 +24,8 @@ Product.init(
         model: 'user', 
         key: 'id',
       }
-
     },
+
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -62,6 +62,7 @@ Product.init(
         isNumeric: true,
       },
     },
+
     category_id: {
       type: DataTypes.INTEGER,
       references: {

@@ -1,5 +1,4 @@
 //Login form takes an email and password input in order to log a user into their account
-
 async function loginFormHandler(event) {
   event.preventDefault();
   

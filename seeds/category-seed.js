@@ -23,9 +23,8 @@ const categoryData = [
 
     {
       "category_name": "Edibles"
-    }
-    
-  ];
+    }    
+];
 
 const seedCategories = () => Category.bulkCreate(categoryData);
 
