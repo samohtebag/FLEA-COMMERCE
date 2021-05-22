@@ -2,27 +2,27 @@ const { Category } = require('../models');
 
 const categoryData = [
     {
-      "category_name": "Weed"
+      "category_name": "Produce"
     },
 
     {
-      "category_name": "Eggs"
+      "category_name": "Dried Fruit"
     },
 
     {
-      "category_name": "Mushrooms"
+      "category_name": "Mushroom Snacks"
     },
 
     {
-      "category_name": "Weights"
+      "category_name": "Beef Jerky"
     },
 
     {
-      "category_name": "Chickens"
+      "category_name": "Nuts"
     },
 
     {
-      "category_name": "Edibles"
+      "category_name": "Other"
     }    
 ];
 

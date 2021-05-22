@@ -38,7 +38,7 @@
 
 - You must install Both Node.js and MySQL on your computer.
 - Clone the repo by copying and pasting in your command line: 
-- `git clone git@github.com:/Jbarbss/Project-2`
+- `git clone git@github.com:Jbarbss/FLEA-COMMERCE`
 - Navigate to the root directory and run: 
 - `npm install`
 - Navigate to the root directory: 
@@ -65,26 +65,19 @@
 - To start the server, in the command line run: 
 - `npm start`
 
-  ![Screen Shot1](./images/Full_Screen_Shot_DashBoard.png?raw=true "Screen Shot1")
+  ![Screen Shot1](https://i.imgur.com/902eooC.jpgc "Screen Shot1")
 
-  ![Screen Shot2](./images/Login_Screen.png?raw=true "Screen Shot2")
+  ![Screen Shot2](https://i.imgur.com/RoYh68g.png "Screen Shot2")
 
-  ![Screen Shot3](./images/Signup_Screen.png?raw=true "Screen Shot3")
+  ![Screen Shot3](https://i.imgur.com/OaNNxTv.png "Screen Shot3")
 
-  ![Screen Shot4](./images/Create_Post_Screen.png?raw=true "Screen Shot4")
-
-  ![Screen Shot5](./images/Add_Comment_Screen.png?raw=true "Screen Shot5")
-
-  ![Screen Shot6](./images/Edit_Post.png?raw=true "Screen Shot6")
-
-  ![Screen Shot7](./images/Delete_Post.png?raw=true "Screen Shot7")
-
+  ![Screen Shot4](https://i.imgur.com/PNxDrOn.png "Screen Shot4")
   
    
  ## Links
  
-  * Application URL: (https://Jbarbss.github.io/Project-2/)
-  * Github Repository URL: (https://github.com/Jbarbss/Project-2)
+  * Application URL: (https://Jbarbss.github.io/FLEA-COMMERCE/)
+  * Github Repository URL: (https://github.com/Jbarbss/FLEA-COMMERCE)
   * Heroku URL: (https://cryptic-spire-79502.herokuapp.com/)
 
 

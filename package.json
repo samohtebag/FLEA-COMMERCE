@@ -1,5 +1,5 @@
 {
-  "name": "project-2",
+  "name": "flea-commerce",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jbarbss/Project-2.git"
+    "url": "git+https://github.com/Jbarbss/FLEA-COMMERCE.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jbarbss/Project-2/issues"
+    "url": "https://github.com/Jbarbss/FLEA-COMMERCE/issues"
   },
-  "homepage": "https://github.com/Jbarbss/Project-2#readme",
+  "homepage": "https://github.com/Jbarbss/FLEA-COMMERCE#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
