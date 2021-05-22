@@ -2,27 +2,27 @@ const { Tag } = require('../models');
 
 const productTagData = [
     {
-    "tag_name": "example"
+    "tag_name": "free-range"
     },
 
     {
-      "tag_name": "example"
+      "tag_name": "dried goods"
     },
 
     {
-      "tag_name": "example"
+      "tag_name": "organic"
     },
 
     {
-      "tag_name": "example"
+      "tag_name": "fresh"
     },
 
     {
-      "tag_name": "example"
+      "tag_name": "allergies"
     },
 
     {
-      "tag_name": "example"
+      "tag_name": "handmade"
     },
 ];
 
