@@ -1,4 +1,3 @@
-
 const categorySeed = require('./category-seed');
 const productSeed = require('./product-seed');
 const tagSeed = require('./tag-seed');
@@ -11,7 +10,7 @@ const seedDatabase = async () => {
     await sequelize.sync({ force: true });
         console.log('\n-----DATABASE SYNCED -----\n');
 
-        await userSeeds();
+    await userSeeds();
         console.log('\n-----USERS SYNCED -----\n');
 
     await categorySeed();
@@ -20,15 +19,11 @@ const seedDatabase = async () => {
     await productSeed();
         console.log('\n-----PRODUCTS SYNCED -----\n');
 
-        await tagSeed();
+    await tagSeed();
         console.log('\n-----TAGS SYNCED -----\n');
-
 
     await productTags();
         console.log('\n-----PRODUCT TAGS SYNCED -----\n');
-
- 
-  
 
     process.exit(0);
 };

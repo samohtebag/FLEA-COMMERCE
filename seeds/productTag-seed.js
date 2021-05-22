@@ -30,7 +30,6 @@ const productTagData = [
         "tag_id": 6,
         "product_id": 6
     }
-  
 ];
 
 const seedTags = () => ProductTag.bulkCreate(productTagData);
