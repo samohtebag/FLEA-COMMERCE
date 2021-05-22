@@ -76,25 +76,23 @@ The division of work for this project is as follows.
 
   Jason Barbanel: 
   
-  * API, Handle Bars, Routes, Front End, SQL
+  * API, Handle Bars, Routes, Front End, SQL, Cloudinary, Repo creation
 
   Gabe Thomas:
 
-  * API, Routes, Seeds, Front End
+  * API, Routes, Seeds, Front End, WireFrames
 
   Steven Paul:
 
-
-  * Cloudinary, Seeds, API
-
+  * Routes, Seeds, API, Front End
 
   Chloe Yu:
 
-  * Handle Bars, Routes, Front End
+  * Handle Bars, Routes, Front End, PowerPoint
 
   Patrick Walker:
 
-  * Routes, Front End, Readme, SQL
+  * Routes, Front End, Readme, SQL, Handle Bars, PowerPoint
 
   Massive THANK YOU to Kieran Anderson (T/A) for all of the help getting this working and for being so patient and understanding while we worked though this. 
 
