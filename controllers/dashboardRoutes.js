@@ -69,6 +69,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       'product_price',
       'product_details',
       'stock',
+      "user_email",
       'category_id'
     ],
     include: [

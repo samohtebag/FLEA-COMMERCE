@@ -46,7 +46,7 @@ Product.init(
 
     user_email: {
       type: DataTypes.STRING,
-      allowNull: false, 
+      
     },
 
     product_image: {
