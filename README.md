@@ -1,28 +1,10 @@
 # Flea Commerce
 
-
-![html5](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
-![css3](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
-![javascript](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![bootstrap](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
-![jquery](https://img.shields.io/badge/jquery%20-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white)
-![mysql](https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white)
-![cloudinary](https://img.shields.io/badge/cloudinary-%23563D7.svg?&style=for-the-badge&logo=cloudinary&logoColor=white)
-![express](https://img.shields.io/badge/express-%2363D7.svg?&style=for-the-badge&logo=express&logoColor=white)
-![node](https://img.shields.io/badge/node-%235D7.svg?&style=for-the-badge&logo=node&logoColor=white)
-![sequelize](https://img.shields.io/badge/sequelize-%23323.svg?&style=for-the-badge&logo=sequelize&logoColor=white)
-![dotenv](https://img.shields.io/badge/DOTenv-%23E34F26.svg?&style=for-the-badge&logo=dotenv&logoColor=white)
-
-
-<br>
-
-
-
 ![License](https://img.shields.io/badge/License%3A-MIT-green.svg)
 
 ## Description
 
-  This E-Commerce website displays products for purchase. Users need to create an account and log in to post items to their dashboard. They can then add/remove/update items as they see fit.
+  This E-Commerce website displays products. Users can add and remove products to/from their cart while also specifying the quantity of each item. They can then enter their address and choose Stripe to handle the payment processing. 
 
 ## Table of Contents
   * [Installation](#installation)
@@ -58,13 +40,6 @@
 - Sequelize
 - Dotenv
 - Handlebars
-- BootStrap
-- Cloudinary
-- JavaScript
-- HTML
-- REST Api
-- CSS
-
 
 ## Usage
 
@@ -101,23 +76,23 @@ The division of work for this project is as follows.
 
   Jason Barbanel: 
   
-  * API, Handle Bars, Routes, Front End, SQL, Cloudinary, Repo creation
+  * API, Handle Bars, Routes, Front End, SQL
 
   Gabe Thomas:
 
-  * API, Handle Bars, Routes, Front End, Seeds, WireFrame
+  * API, Routes, Seeds, Front End
 
   Steven Paul:
 
-  * API, Routes, WireFrame, 
+  * Cloudinary, Seeds, API
 
   Chloe Yu:
 
-  * Seeds, API, Routes, PowerPoint
+  * Handle Bars, Routes, Front End
 
   Patrick Walker:
 
-  * Handle Bars, Routes, Front End, SQL, Readme, PowerPoint
+  * Routes, Front End, Readme, SQL
 
   Massive THANK YOU to Kieran Anderson (T/A) for all of the help getting this working and for being so patient and understanding while we worked though this. 
 
@@ -130,16 +105,16 @@ The division of work for this project is as follows.
 Connect with us on Github and LinkedIn! 
 
   [![GitHub](https://img.shields.io/badge/Jason%20Barbanel-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/Jbarbss) 
-  [![LinkedIn](https://img.shields.io/badge/Jason%20Barbanel%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/jason-barbanel/)
+  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
 
   [![GitHub](https://img.shields.io/badge/Gabe%20Thomas-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/samohtebag) 
-  [![LinkedIn](https://img.shields.io/badge/Gabe%20Thomas%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/gabriel-thomas513/)
+  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
 
   [![GitHub](https://img.shields.io/badge/Steven%20Paul-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/etown285) 
-  [![LinkedIn](https://img.shields.io/badge/Steven%20Paul%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/steven-paul-bb1564a2/)
+  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
 
   [![GitHub](https://img.shields.io/badge/Chloe%20Yu-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/chloeyu17) 
-  [![LinkedIn](https://img.shields.io/badge/Chloe%20Yu%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/chloe-yu-3037a2156)
+  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
 
   [![GitHub](https://img.shields.io/badge/Patrick%20Walker-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/pat31477) 
   [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
@@ -149,7 +124,7 @@ Connect with us on Github and LinkedIn!
 
 ![License](https://img.shields.io/badge/License%3A-MIT-green.svg)
 
-Copyright (c) 2021
+Copyright (c) 2021 
 
 Jason Barbanel
 
@@ -178,4 +153,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
