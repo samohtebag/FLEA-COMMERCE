@@ -77,7 +77,7 @@
  ## Links
  
   * Github Repository URL: (https://github.com/samohtebag/FLEA-COMMERCE)
-  * Heroku URL: (https://cryptic-spire-79502.herokuapp.com/)
+  * Heroku URL: (https://safe-badlands-91779.herokuapp.com/)
 
 
 ## Team Roles
