@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jbarbss/FLEA-COMMERCE.git"
+    "url": "git+https://github.com/samohtebag/FLEA-COMMERCE.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jbarbss/FLEA-COMMERCE/issues"
+    "url": "https://github.com/samohtebag/FLEA-COMMERCE/issues"
   },
-  "homepage": "https://github.com/Jbarbss/FLEA-COMMERCE#readme",
+  "homepage": "https://github.com/samohtebag/FLEA-COMMERCE#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",

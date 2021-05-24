@@ -76,8 +76,7 @@
    
  ## Links
  
-  * Application URL: (https://Jbarbss.github.io/FLEA-COMMERCE/)
-  * Github Repository URL: (https://github.com/Jbarbss/FLEA-COMMERCE)
+  * Github Repository URL: (https://github.com/samohtebag/FLEA-COMMERCE)
   * Heroku URL: (https://cryptic-spire-79502.herokuapp.com/)
 
 
